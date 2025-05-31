@@ -17,6 +17,8 @@ function App() {
   <Route path='/results' element={<Results/>}/>
   <Route path='/books' element={<Books/>}/>
   <Route path='/courses' element={<Courses/>}/>
+  <Route path='/online' element={<Online/>}/>
+  <Route path='/offline' element={<Offline/>}/>
   <Route path='*' element={<ErrorPage/>}/>
 </Route>
 
@@ -219,7 +221,7 @@ function Footer() {
 
 
 function Class11Program() {
-  return <div>
+ return <div>
     <div style={{
       display:'flex',
       justifyContent:'center',
@@ -227,23 +229,28 @@ function Class11Program() {
       padding:10,
       
     }}>
-      <button style={{background:'white', borderRadius:8,borderColor:'blue',padding:5}}>Online</button>
-      <button style={{background:'white', borderRadius:8,borderColor:'blue',padding:5}}>Offline</button>
+      <Link to="/online"><button style={{background:'white', borderRadius:8,borderColor:'blue',padding:5}}>Online</button></Link>
+      <Link to="/offline"> <button style={{background:'white', borderRadius:8,borderColor:'blue',padding:5}}>Offline</button></Link>
+     
     </div>
    
   </div>
 }
 
 function Results() {
-  return <div>
-
+  return <div style={{
+    padding:5
+  }}>
+<h1>Not Declared yet</h1>
   </div>
   
 }
 
 function Books() {
-  return <div>
-
+  return <div style={{
+    padding:5
+  }}>
+<h1>Not  Issued yet</h1>
   </div>
   
 }
@@ -290,14 +297,42 @@ function Courses() {
 
 
 function Class12Program() {
-  //usenavigate  is use as like user click on class12 then after 10 sec it have to return  on landing page
-  const navigate = useNavigate();
-  return <div>
-    NEET program for class 12
+ return <div>
+    <div style={{
+      display:'flex',
+      justifyContent:'center',
+      gap:20,
+      padding:10,
+      
+    }}>
+      <Link to="/online"><button style={{background:'white', borderRadius:8,borderColor:'blue',padding:5}}>Online</button></Link>
+      <Link to="/offline"> <button style={{background:'white', borderRadius:8,borderColor:'blue',padding:5}}>Offline</button></Link>
+     
+    </div>
+   
   </div>
 }
 
+function Online() {
+  return  <div style={{
+    padding:10,
 
+  }}>
+    <div>
+      <h1>Online Courses</h1>
+    </div>
+  </div>
+}
+
+function Offline() {
+  return <div style={{
+    padding: 10
+  }}>
+    <div>
+      <h1>Offline Courses</h1>
+    </div>
+  </div>
+}
 
 function Login() {
   return (
