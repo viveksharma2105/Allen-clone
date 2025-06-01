@@ -97,7 +97,8 @@ function Header() {
 
       
         
-      <div style={{ marginLeft: 'auto' }}>
+      <div style={{ marginLeft: 'auto',display:'flex', gap:20,alignItems:'center' }}>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGHBloaoNbqvfX-jzRmJPQ4-QeC-SBURv3ig&s" alt="image"  style={{width:25, borderRadius:20}}/>
         <Link to="/login">
           <button style={{ padding: '10px', borderRadius: '10px', background: 'white', borderColor: 'blue' }}>
             Login
@@ -113,7 +114,7 @@ function Header() {
 function Banner(params) {
   
   return <div style={{background:'#019370',padding:5, borderRadius:7, textAlign:'center',display:'flex', justifyContent:'center'}}>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0t1nKcJvuiXBwy7PYHNBuJ70w1WIlRcworQ&s" alt="image" width={34} />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0t1nKcJvuiXBwy7PYHNBuJ70w1WIlRcworQ&s" alt="image" width={34}  />
    <b  style={{color:'yellow'}}>Get upto 90% of scholarship</b> 
    <div style={{color:'white', marginLeft:15}}>on NEET Leader & Achiever Online Courses</div>
   </div>
@@ -233,7 +234,39 @@ function Class11Program() {
       <Link to="/offline"> <button style={{background:'white', borderRadius:8,borderColor:'blue',padding:5}}>Offline</button></Link>
      
     </div>
-   
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      gap: '20px',
+      padding: '40px',
+      
+    }}>
+      
+      <div style={{
+        backgroundColor: 'white',
+        padding: '20px',
+        width: '250px',
+        borderRadius: '10px',
+        textAlign: 'center'
+      }}>
+        <h2>NEET Section -C11</h2>
+        <p>NEET preparation programs with expert guidance.</p>
+        
+      </div>
+
+      
+      <div style={{
+        backgroundColor: 'white',
+        padding: '20px',
+        width: '250px',
+        borderRadius: '10px',
+        textAlign: 'center'
+      }}>
+        <h2>JEE Section -C11</h2>
+        <p>JEE preparation programs designed for success.</p>
+        
+      </div>
+    </div>
   </div>
 }
 
@@ -247,16 +280,76 @@ function Results() {
 }
 
 function Books() {
-  return <div style={{
-    padding:5
+  return <div>
+    <div style={{
+    padding:10,
+    display:"flex",
+    gap:40,
+    alignItems:'center',
+    textAlign:'center'
   }}>
-<h1>Not  Issued yet</h1>
+<div style={{backgroundColor:'white', padding:10, borderRadius:10}}>
+<h5>NEET Class-12</h5>
+<h6></h6>
+</div>
+<div style={{backgroundColor:'white', padding:10, borderRadius:10}}>
+<h5>JEE Class-12</h5>
+<h6></h6>
+</div>
+<div style={{backgroundColor:'white', padding:10, borderRadius:10}}>
+<h5> Class-12</h5>
+<h6></h6>
+</div>
+  </div>
+    <div style={{
+    padding:10,
+    display:"flex",
+    gap:40,
+    alignItems:'center',
+    textAlign:'center'
+  }}>
+<div style={{backgroundColor:'white', padding:10, borderRadius:10}}>
+<h5>NEET Class-11</h5>
+<h6></h6>
+</div>
+<div style={{backgroundColor:'white', padding:10, borderRadius:10}}>
+<h5>JEE Class-11</h5>
+<h6></h6>
+</div>
+<div style={{backgroundColor:'white', padding:10, borderRadius:10}}>
+<h5> Class-11</h5>
+<h6></h6>
+</div>
+  </div>
+    <div style={{
+    padding:10,
+    display:"flex",
+    gap:40,
+    alignItems:'center',
+    textAlign:'center'
+  }}>
+<div style={{backgroundColor:'white', padding:10, borderRadius:10}}>
+<h5>NEET Special </h5>
+<h6></h6>
+</div>
+<div style={{backgroundColor:'white', padding:10, borderRadius:10}}>
+<h5>JEE Special </h5>
+<h6></h6>
+</div>
+<div style={{backgroundColor:'white', padding:10, borderRadius:10}}>
+<h5> Class-12 Special</h5>
+<h6></h6>
+</div>
+
+
+
+  </div>
   </div>
   
 }
 
 function Courses() {
-  return (
+  return (<div>
     <div style={{
       display: 'flex',
       justifyContent: 'center',
@@ -290,6 +383,40 @@ function Courses() {
         
       </div>
     </div>
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      gap: '20px',
+      padding: '40px',
+      
+    }}>
+      
+      <div style={{
+        backgroundColor: 'white',
+        padding: '20px',
+        width: '250px',
+        borderRadius: '10px',
+        textAlign: 'center'
+      }}>
+        <h2>Clss 6-12 </h2>
+        <p>Class 6-12 preparation programs with expert guidance.</p>
+        
+      </div>
+
+      
+      <div style={{
+        backgroundColor: 'white',
+        padding: '20px',
+        width: '250px',
+        borderRadius: '10px',
+        textAlign: 'center'
+      }}>
+        <h2>Class 12+</h2>
+        <p>Class 12+ preparation programs designed for success.</p>
+        
+      </div>
+    </div>
+    /</div>
   );
 }
 
@@ -309,27 +436,85 @@ function Class12Program() {
       <Link to="/offline"> <button style={{background:'white', borderRadius:8,borderColor:'blue',padding:5}}>Offline</button></Link>
      
     </div>
-   
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      gap: '20px',
+      padding: '40px',
+      
+    }}>
+      
+      <div style={{
+        backgroundColor: 'white',
+        padding: '20px',
+        width: '250px',
+        borderRadius: '10px',
+        textAlign: 'center'
+      }}>
+        <h2>NEET Section -C12</h2>
+        <p>NEET preparation programs with expert guidance.</p>
+        
+      </div>
+
+      
+      <div style={{
+        backgroundColor: 'white',
+        padding: '20px',
+        width: '250px',
+        borderRadius: '10px',
+        textAlign: 'center'
+      }}>
+        <h2>JEE Section -C12</h2>
+        <p>JEE preparation programs designed for success.</p>
+        
+      </div>
+    </div>
   </div>
 }
 
 function Online() {
   return  <div style={{
-    padding:10,
+    padding:30,
 
   }}>
-    <div>
+    <div >
+      <div style={{
+        display:'flex',
+        gap:40
+      }}>
+
       <h1>Online Courses</h1>
+      <div style={{backgroundColor:'white',padding:20, borderRadius:20}}>
+<b>Online Coaching for NEET</b>
+      </div>
+       <div style={{backgroundColor:'white',padding:20, borderRadius:20}}>
+<b>Online Coaching for JEE</b>
+      </div>
+      </div>
     </div>
   </div>
 }
 
 function Offline() {
-  return <div style={{
-    padding: 10
+return  <div style={{
+    padding:10,
+
   }}>
-    <div>
-      <h1>Offline Courses</h1>
+    <div >
+      <div style={{
+        display:'flex',
+        gap:40,
+        padding:30
+      }}>
+
+      <h1>Online Courses</h1>
+      <div style={{backgroundColor:'white',padding:20, borderRadius:20}}>
+<b>Offline Coaching for NEET</b>
+      </div>
+       <div style={{backgroundColor:'white',padding:20, borderRadius:20}}>
+<b>Offline Coaching for JEE</b>
+      </div>
+      </div>
     </div>
   </div>
 }
